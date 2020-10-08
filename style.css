@@ -95,3 +95,98 @@ header#headermain {
     display: flex;
     align-items: center;
 }
+.containermainlistcontainer ul {
+    max-width: max-content;
+    display: flex;
+    align-items: center;
+    margin: auto;
+}
+
+.containermainlistcontainer a {
+    color: #222;
+    font-style: italic;
+    font-size: 14px;
+}
+
+.containermainlistcontainer ul {
+    margin-bottom: 20px;
+}
+
+.containermainlistcontainer a:hover {
+    opacity: 0.6;
+}
+
+.containermainlistcontainer li:nth-child(even) {
+    margin: 0px 20px;
+}
+.maincontainer {
+    max-width: 1140px;
+    margin: auto;
+}
+.imagecontainerproyuct {
+    position: relative;
+    height: 100%;
+    display: block;
+    overflow: hidden;
+    max-height: 437px;
+}
+
+.contentcontainermain {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    background: #fff;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.innercontainerproduct {
+    margin-bottom: 50px;
+    min-height: 437px;
+    overflow: hidden;
+}
+
+.innercontainerproduct img {
+    /* width: 100%; */
+    height: 100%;
+    object-fit: cover;
+}
+
+.innercontainerproduct:hover .contentcontainermain {
+    opacity: 1;
+    visibility: visible;
+    transition: 0.7s all;
+}
+
+.contentcontainermain {
+    transition: 0.7s all;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 1650px)  {
+    .container,.maincontainer {
+        max-width: 1600px;
+    }
+}
