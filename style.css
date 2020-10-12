@@ -671,8 +671,53 @@ div#contentModalContainer {
     left: auto;
     right: 25px;
 }
+.topheadeer {
+    background: #222;
+    color: #fff;
+    text-align: center;
+    min-height: 31px;
+    font-size: 8px;
+    display: flex;
+    align-items: center;
+    font-family: ltc-bodoni-175;
+    font-size: 9px;
+    letter-spacing: 2px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+span.closertopheader {
+    position: absolute;
+    right: 10px;
+    /* border: 1px solid #fff; */
+    width: 10px;
+    height: 10px;
+    top: 0;
+    bottom: 0;
+    cursor: pointer;
+    margin: auto;
+}
 
+span.closertopheader:after {content: "";display: block;width: 7px;height: 7px;border: 1px solid #fff;border-left: 0;border-top: 0;border-right: 0;transform: rotate(45deg);position: absolute;top: 0;bottom: 0;margin: auto;left: 0;right: 0;}
 
+span.closertopheader:before {
+    content: "";
+    display: block;
+    width: 7px;
+    height: 7px;
+    border: 1px solid #fff;
+    border-left: 0;
+    border-top: 0;
+    border-right: 0;
+    transform: rotate(-45deg);
+    position: absolute;
+    left: -11px;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+}
 
 
 
