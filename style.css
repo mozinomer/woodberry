@@ -5,8 +5,8 @@ div#menuMain {
 
 .hamburger {
     display: block;
-    width: 30px;
-    height: 30px;
+    width: 25px;
+    height: 15px;
     border: 1px solid #000;
     position: relative;
     border: none;
@@ -33,7 +33,7 @@ span.span2 {}
     width: 100%;
     background: #000;
     width: 100%;
-    height: 1px;
+    height: 2px;
     /* height: 2px; */
     display: block;
 }
@@ -46,7 +46,7 @@ span.span2 {
     display: block;
 }
 
-span.span3 {bottom: 0;top: auto;}
+span.span3 {bottom: 0;top: auto;border: 1px solid;}
 
 .hamburger {
     display: flex;
@@ -106,6 +106,7 @@ header#headermain {
     color: #222;
     font-style: italic;
     font-size: 14px;
+    font-family: ltc-bodoni-175;
 }
 
 .containermainlistcontainer ul {
@@ -114,6 +115,7 @@ header#headermain {
 
 .containermainlistcontainer a:hover {
     opacity: 0.6;
+    color: rgba(33,33,33,.45);
 }
 
 .containermainlistcontainer li:nth-child(even) {
@@ -343,6 +345,7 @@ p.onlyavaible {
     z-index: 99;
     height: 100%;
     display: flex;
+    display: none;
     align-content: center;
 }
 div.closer {
@@ -680,8 +683,11 @@ div#contentModalContainer {
 
 
 
-@media only screen and (min-width: 1650px)  {
+@media only screen and (min-width: 1300px)  {
     .container,.maincontainer {
-        max-width: 1600px;
+        padding-left: 120px;
+        padding-right: 120px;
+        max-width: 100%;
+        width: 100%;
     }
 }

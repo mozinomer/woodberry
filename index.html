@@ -89,24 +89,15 @@
     </header>
     <div class="containermainlistcontainer">
         <ul>
-            <li>
-                <a href="#">All</a>
-            </li>
-            <li>
-                <a href="#">* Gift Boxes</a>
-            </li>
-            <li>
-                <a href="#">* Gift Boxes</a>
-            </li>
-            <li>
-                <a href="#">* Gift Boxes</a>
-            </li>
-            <li>
-                <a href="#">* Gift Boxes</a>
-            </li>
-            <li>
-                <a href="#">* Gift Boxes</a>
-            </li>
+            <li><a href="">All </a></li>
+            <li><a href="">Gift Boxes </a></li>
+            <li><a href="">Charcoal Bars </a></li>
+            <li><a href="">Citrus Bars </a></li>
+            <li><a href="">Exfoliating Bars </a></li>
+            <li><a href="">Lavender Bars </a></li>
+            <li><a href="">Minty Bars </a></li>
+            <li><a href="">Soap Dish </a></li>
+            <li><a href="">Spicy Bars </a></li>
         </ul>
     </div>
     <div class="maincontainer">
@@ -557,4 +548,15 @@
         </div>
     </footer>
 </body>
+<script type="text/javascript">
+    $('div#closer').click( function(e) {
+        $('.modalContainer').delay(4000).hide();
+        $('body').css({'overflow' : 'auto'})
+    });
+    $('button#addtoCartCOntaienr').click( function(e) {
+        e.preventDefault();
+        $('.modalContainer').delay(4000).css({'display' : 'flex'});
+        $('body').css({'overflow' : 'hidden'})
+    });
+</script>
 </html>
