@@ -686,6 +686,7 @@ div#contentModalContainer {
     top: 0;
     left: 0;
     right: 0;
+    z-index: 999;
 }
 span.closertopheader {
     position: absolute;
@@ -802,7 +803,10 @@ ul.socialMediaLinksSinglepage li:nth-child(even) {
 ul.socialMediaLinksSinglepage li {
     font-size: 11px;
 }
-
+.contentMainSignle > img {
+    margin: auto;
+    margin-bottom: 40px;
+}
 
 
 
