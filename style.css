@@ -1561,4 +1561,11 @@ ul#rightheader img {
     .mobileStickyFooter {
         display: flex;
     }
+    .contactID {
+        padding: 10px 20px;
+    }
+
+    .contactID .col-md-6 {
+        max-width: 50%;
+    }
 }
