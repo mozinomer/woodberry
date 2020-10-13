@@ -19,3 +19,6 @@ $('.hamburger').click( function(e) {
 	$('div#menuMain').addClass('active')
 	$('body').css({'overflow' : 'hidden'})
 })
+$('.closertopheader').click( function(e) {
+    $('.topheadeer').fadeOut()
+})

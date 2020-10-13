@@ -1102,12 +1102,194 @@ header#headermain {
 ul#rightheader img {
     width: 22px;
 }
+.formContainerSignIn {
+    max-width: 500px;
+    margin: auto;
+    text-align: center;
+    padding: 40px 40px;
+    margin: 100px auto;
+    box-shadow: 0px 0px 54px -6px #cccc;
+    border-radius: 10px;
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+}
 
+.formContainerSignIn input {
+    width: 100%;
+    margin-bottom: 13px;
+    height: 45px;
+    border: 1px solid #ccc;
+    padding: 0px 10px;
+    font-size: 12px;
+    text-transform: capitalize;
+}
+
+.formContainerSignIn p {
+    color: #000;
+    font-size: 30px;
+    margin-bottom: 40px;
+    font-weight: 800;
+}
+
+.formContainerSignIn button {
+    height: 50px;
+    background: none;
+    border: 1px solid #222;
+    font-size: 14px;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    transition: 0.5s all;
+}
+
+.formContainerSignIn button:hover {
+    background: #222;
+    color: #fff;
+}
+
+.containelinksForm a {
+    color: #222;
+    font-size: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* media quries */
 @media only screen and (min-width: 1300px)  {
     .container,.maincontainer {
         padding-left: 120px;
         padding-right: 120px;
         max-width: 100%;
         width: 100%;
+    }
+}
+
+
+@media only screen and (max-width: 1300px)  {
+    .maincontainer {
+        max-width: 100%;
+    }
+
+    .maincontainer .row {
+        margin: 0px;
+    }
+
+    .maincontainer .row > .col-md-4 {
+        max-width: 50%;
+    }
+
+    .imagecontainerproyuct {
+        max-width: max-content;
+        max-height: max-content;
+    }
+
+    .innercontainerproduct {
+        min-height: auto;
+        width: 100%;
+    }
+
+    a.contentcontainermain {
+        position: relative;
+        top: auto;
+        bottom: auto;
+        left: auto;
+        display: block;
+        right: auto;
+        visibility: visible;
+        opacity: 1;
+    }
+
+    .innercontainerproduct img {
+        height: 179px;
+    }
+
+    button#addtoCartCOntaienr {
+        display: none;
+    }
+
+    .containermaininner {
+        margin: 20px 0px 0px;
+    }
+
+    .containermaininner h6 {
+        font-size: 19px;
+    }
+
+    p.onlyavaible {
+        font-size: 10px;
+    }
+
+    footer {
+        margin: 0px;
+        padding-top: 50px;
+    }
+}
+
+
+
+@media only screen and (max-width: 767px)  {
+    .innerMenu .row {
+        display: block;
+        margin: 0px;
+    }
+
+    div#menuMain.active {
+        overflow: auto;
+        max-width: 100%;
+    }
+
+    .innerMenu .col:first-child {width: 100%;border: none;padding: 80px 0px;height: auto;border-bottom: 1px solid #2222222b;}
+
+    .closemenu {
+        display: none;
+    }
+
+    .innerMenu .col:last-child {
+        padding: 20px;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    .innerMenu a {
+        font-size: 30px;
+    }
+
+    .logocontainermenu {
+        border-bottom: 1px solid #2222222b;
+    }
+
+    .logocontainermenu + p {
+        border-bottom: 1px solid #2222222b;
+    }
+
+    .newslettermenu form {
+        max-width: 80%;
+    }
+
+    .newslettermenu form input {
+        margin-bottom: 10px;
     }
 }
