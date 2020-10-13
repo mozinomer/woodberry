@@ -1,13 +1,18 @@
 div#menuMain {
     position: fixed;
-    left: 0%;
+    left: -100%;
     top: 0;
     background: #fff;
     height: 100%;
     z-index: 999;
     max-width: 60%;
+    transition: 0.6s all;
 }
 
+div#menuMain.active {
+    transition: 0.6s all;
+    left: 0;
+}
 .hamburger {
     display: block;
     width: 25px;

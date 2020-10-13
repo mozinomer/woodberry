@@ -14,7 +14,8 @@
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
         integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
         <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />  
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script><script type="text/javascript" src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script> 
+
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
@@ -508,7 +509,7 @@
                                     add to cart
                                 </button>
                             </form>
-                            <a href="#" class="FullScreenView">
+                            <a href="./single.html" class="FullScreenView">
                                 View Full Screen
                             </a>
                         </div>
@@ -556,15 +557,5 @@
         </div>
     </footer>
 </body>
-<script type="text/javascript">
-    $('div#closer').click( function(e) {
-        $('.modalContainer').delay(4000).hide();
-        $('body').css({'overflow' : 'auto'})
-    });
-    $('button#addtoCartCOntaienr').click( function(e) {
-        e.preventDefault();
-        $('.modalContainer').delay(4000).css({'display' : 'flex'});
-        $('body').css({'overflow' : 'hidden'})
-    });
-</script>
+<script type="text/javascript" src="./akele.js"></script>
 </html>
