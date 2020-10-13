@@ -1164,7 +1164,9 @@ ul#rightheader img {
 .notdisplayondesktop {
     display: none;
 }
-
+.mobileStickyFooter {
+    display: none;
+}
 
 
 
@@ -1555,5 +1557,8 @@ ul#rightheader img {
 
     ul.socialMediaLinksSinglepage i {
         font-size: 17px;
+    }
+    .mobileStickyFooter {
+        display: flex;
     }
 }
