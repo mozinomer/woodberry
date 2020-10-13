@@ -31,7 +31,7 @@ $('.closertopheader').click( function(e) {
     $('.topheadeer').fadeOut()
 })
 $('.selectorMobileCat').click( function(e) {
-    $(this).parent().find('ul').toggleClass('active');
+    $(this).parent().find('ul').slideToggle();
     $(this).toggleClass('active');
 })
 $('.socialmediaIntegrationMobile').click( function(e) {
