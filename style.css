@@ -1099,7 +1099,9 @@ header#headermain.activatedScroll {
 header#headermain {
     transition: 0.4s all;
 }
-
+ul#rightheader img {
+    width: 22px;
+}
 
 @media only screen and (min-width: 1300px)  {
     .container,.maincontainer {
