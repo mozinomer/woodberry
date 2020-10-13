@@ -16,9 +16,28 @@ $('.closemenu').click( function(e) {
 	$('body').css({'overflow' : 'auto'})
 })
 $('.hamburger').click( function(e) {
-	$('div#menuMain').addClass('active')
-	$('body').css({'overflow' : 'hidden'})
+    if ($(window).width() > 767) {
+        $('body').css({'overflow' : 'hidden'});
+    	$('div#menuMain').addClass('active')
+    } else {
+        $('body').toggleClass('flowed')
+        $('div#menuMain').toggleClass('active');
+        $(this).toggleClass('active');
+        $('.socialMediaContainerFooterMovile').removeClass('active');     
+        $('.socialmediaIntegrationMobile').removeClass('active');     
+    }
 })
 $('.closertopheader').click( function(e) {
     $('.topheadeer').fadeOut()
+})
+$('.selectorMobileCat').click( function(e) {
+    $(this).parent().find('ul').toggleClass('active');
+    $(this).toggleClass('active');
+})
+$('.socialmediaIntegrationMobile').click( function(e) {
+    $('.socialMediaContainerFooterMovile').toggleClass('active');
+    $('div#menuMain').removeClass('active')        
+    $('.hamburger').removeClass('active')        
+    $(this).toggleClass('active');
+    $('body').toggleClass('flowed')
 })
