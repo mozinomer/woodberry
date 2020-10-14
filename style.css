@@ -1804,9 +1804,8 @@ header#headermain, .topheadeer
     position: relative;
     position: absolute;
     right: 0px;
-    top: 0;
-    bottom: 0;
-    margin: auto;
+    top: auto;
+    bottom: 30px;
 }
 
 .containerformnewsletter form button::after {
@@ -2291,5 +2290,15 @@ html {
     .containermainlistcontainer {
         margin: 20px auto 0px;
     }
+    .footernew ul li {
+        flex: 0 50%;
+    }
 
+    .footernew .container .row {
+        flex-direction: column-reverse;
+    }
+
+    .containerformnewsletter {
+        margin-bottom: 40px;
+    }
 }
