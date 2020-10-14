@@ -41,3 +41,7 @@ $('.socialmediaIntegrationMobile').click( function(e) {
     $(this).toggleClass('active');
     $('body').toggleClass('flowed')
 })
+$('div#closerpipi').click( function(e) {
+    e.preventDefault();
+    $('.newsleeterPopup').fadeOut();
+})
