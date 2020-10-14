@@ -1014,6 +1014,7 @@ body {
     max-width: 656px;
     margin: auto;
     text-align: center;
+    margin-top: 50px;
 }
 
 .contactID label {
@@ -1736,6 +1737,12 @@ header#headermain, .topheadeer
 }
 .searchicon::before, .searchicon::after {
     transition: 0.4s all;
+}
+.product-wrapper.zoom-image {
+    cursor: zoom-in;
+}
+.breadCrubms {
+    margin-top: 40px;
 }
 
 

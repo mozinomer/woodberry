@@ -58,6 +58,8 @@ $('.slidercontainer').slick({
     slideToShow: 1,
     dots: true,
     arrows: false,
+    autoplay: true,
+    autoplaySpeed: 2000,
 });
 $('.searchicon').click( function(e) {
     $(this).parent().find('form').toggleClass('active')
