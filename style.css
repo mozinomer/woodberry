@@ -1467,6 +1467,8 @@ div.itemslider img {
     top: 0;
     bottom: 0;
     z-index: -1;
+    height: 100%;
+    width: 100%;
 }
 
 div.itemslider {
@@ -1547,19 +1549,79 @@ div.itemslider .container {
 .sliderMainHome .slick-dots li.slick-active {
     opacity: 1;
 }
+.containermainlistcontainer {
+    margin: 90px auto 40px;
+}
+
+.containermainlistcontainer li a {
+    opacity: 0.5;
+}
+
+.containermainlistcontainer li.active a {
+    opacity: 1;
+}
+header#headermain, .topheadeer
+{
+    display: none;  
+}
 
 
 
 
 
 
+.itemslider.slick-active h2, 
+.itemslider.slick-active p, 
+.itemslider.slick-active a 
+{
+    -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 100%);
+    clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 100%);
+    transform: translateY(-50px);
+    opacity: 0;
+    animation-name: titleAnimation;
+    animation-timing-function: ease;
+    animation-duration: 3s;
+    animation-delay: 0.6s;
+    -webkit-animation-fill-mode: forwards;
+}
+.itemslider h2, 
+.itemslider p, 
+.itemslider a 
+{
+    opacity: 0;
+}
 
 
 
-
-
-
-
+@keyframes titleAnimation {
+  0% {
+    transform: translateY(-50px);
+    opacity: 0;
+    -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 100%);
+    clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 100%);
+  }
+  20% {
+    transform: translateY(0);
+    opacity: 1;
+    -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 0%);
+    clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 0%);
+  }
+  80% {
+    transform: translateY(0);
+    opacity: 1;
+    -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 0%);
+    clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 0%);
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+    -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 0%);
+    clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 0%);
+  }
+}
+*:focus {
+    outline: none !important
+}
 
 
 
@@ -1992,6 +2054,20 @@ div.itemslider .container {
 
     p.contetnNewsletter {
         font-size: 14px;
+    }
+    header#headermain, .topheadeer
+    {
+        display: block;  
+    }
+    div.headerMainNew {
+        display: none;
+    }
+    .contentbanner h2 {
+        font-size: 32px;
+    }
+
+    .containermainlistcontainer {
+        margin: 20px auto 0px;
     }
 
 }
