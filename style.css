@@ -1470,7 +1470,7 @@ body {
     transition: 0.5s all;
 }
 
-.searchicon.active::after {content: "";border-left: 3px solid #000;border-radius: 0;border-right: 0px;border-top: 0;border-bottom: 0;width: auto;transform: rotate(224deg);height: 24px;top: 0;position: absolute;left: 12px;}
+.searchicon.active::after {content: "";border-left: 3px solid #000;border-radius: 0;border-right: 0px;border-top: 0;border-bottom: 0;width: auto;transform: rotate(224deg);height: 24px;top: -4px;position: absolute;left: 13px;}
 
 .searchicon.active::before {
     content: "";
@@ -1507,6 +1507,7 @@ body {
 }
 .searchbar {
     position: relative;
+    display: flex;
 }
 a#loginId:first-child img {
     width: 18px;
@@ -1695,15 +1696,16 @@ header#headermain, .topheadeer
 }
 
 .searchbar form {
-    position: absolute;
+    position: relative;
     display: flex;
     align-items: center;
     z-index: 999;
-    top: 100%;
-    bottom: -124px;
+    top: 0;
+    bottom: 0;
     width: 260px;
     margin: 0px;
     justify-content: space-between;
+    left: 50px;
 }
 
 .searchbar form input {
@@ -1711,20 +1713,24 @@ header#headermain, .topheadeer
     padding: 0px 10px;
     font-size: 12px;
     background: none;
-    border: 1px solid #fff;
-    color: #fff;
-    width: 100%;
+    border: 1px solid #222;
+    color: #222;
+    width: 60%;
 }
 
 .searchbar form input::placeholder {
-    color: #fff;
+    color: #222;
     font-weight: 100;
 }
 
 .searchbar form button {
     height: 31px;
-    border: 2px solid #fff;
+    border: 2px solid #222;
     margin-left: 10px;
+    background: #222;
+    color: #fff;
+    border: 2px solid #222;
+    width: 40%;
 }
 .searchbar form {
     width: 0px;
@@ -1849,7 +1855,9 @@ header#headermain, .topheadeer
 html {
     scroll-behavior: smooth;
 }
-
+div#aboutpage {
+    margin: 40px 0px;
+}
 
 
 
