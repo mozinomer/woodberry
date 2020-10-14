@@ -1785,6 +1785,8 @@ header#headermain, .topheadeer
     border-bottom: 1px solid #ccc;
     padding: 10px;
     padding-right: 50px;
+    background: none
+    
 }
 
 .containerformnewsletter input::placeholder {
@@ -1807,7 +1809,19 @@ header#headermain, .topheadeer
     margin: auto;
 }
 
-.containerformnewsletter form button::after {content: ">";display: block;width: 10px;height: 10px;position: absolute;left: 0;right: 0;font-size: 20px;top: 0;bottom: 0;margin: auto;}
+.containerformnewsletter form button::after {
+    content: ">";
+    display: block;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    font-size: 20px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
 
 .containerformnewsletter {
     margin-top: 30px;
@@ -1821,7 +1835,21 @@ header#headermain, .topheadeer
     padding: 20px 0px;
     border-top: 1px solid #cccc;
 }
-
+.copyrights {
+    font: 14px;
+}
+.copyrights p {
+    opacity: 0.6
+}
+.copyrights a {
+    color: #222;
+    display: inline-block;
+    opacity: 1;
+    text-decoration: underline !important;
+}
+html {
+    scroll-behavior: smooth;
+}
 
 
 
