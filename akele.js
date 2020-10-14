@@ -10,11 +10,10 @@ $('button#addtoCartCOntaienr').click( function(e) {
     $('.modalContainer').delay(4000).css({'display' : 'flex'});
     $('body').css({'overflow' : 'hidden'})
 });
-
 $('.closemenu').click( function(e) {
 	$('div#menuMain').removeClass('active')
 	$('body').css({'overflow' : 'auto'})
-})
+});
 $('.hamburger').click( function(e) {
     if ($(window).width() > 767) {
         $('body').css({'overflow' : 'hidden'});
@@ -26,7 +25,7 @@ $('.hamburger').click( function(e) {
         $('.socialMediaContainerFooterMovile').removeClass('active');     
         $('.socialmediaIntegrationMobile').removeClass('active');     
     }
-})
+});
 $('.closertopheader').click( function(e) {
     $('.topheadeer').fadeOut()
 })
@@ -59,4 +58,13 @@ $('.slidercontainer').slick({
     slideToShow: 1,
     dots: true,
     arrows: false,
+});
+$('.searchicon').click( function(e) {
+    $(this).parent().find('form').toggleClass('active')
+    $(this).toggleClass('active')
 })
+
+
+
+
+
