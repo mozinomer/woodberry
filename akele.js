@@ -44,4 +44,14 @@ $('.socialmediaIntegrationMobile').click( function(e) {
 $('div#closerpipi').click( function(e) {
     e.preventDefault();
     $('.newsleeterPopup').fadeOut();
-})
+});
+
+$(function () {
+  $('.zoom-image').each(function () {
+    var originalImagePath = $(this).find('img').data('original-image');
+    $(this).zoom({
+      url: originalImagePath,
+      magnify: 0.6 });
+
+  });
+});
