@@ -60,6 +60,7 @@ $('.slidercontainer').slick({
     arrows: false,
     autoplay: true,
     autoplaySpeed: 2000,
+    infinite: true,
 });
 $('.searchicon').click( function(e) {
     $(this).parent().find('form').toggleClass('active')
