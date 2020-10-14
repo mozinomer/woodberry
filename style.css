@@ -1745,7 +1745,82 @@ header#headermain, .topheadeer
     margin-top: 40px;
 }
 
+.footernew {
+    margin: 100px 0px 0px;
+    padding-top: 100px;
+    border-top: 1px solid #cccc;
+}
 
+.footernew ul {
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footernew li {
+    flex: 0 33%;
+}
+
+.footernew li  a {
+    display: block;
+    margin-bottom: 20px;
+    color: #222;
+    font-size: 15px;
+}
+
+.containerformnewsletter p {
+    display: none;
+}
+
+.containerformnewsletter form {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.containerformnewsletter form input {
+    width: 100%;
+    border: 0;
+    border-bottom: 1px solid #ccc;
+    padding: 10px;
+    padding-right: 50px;
+}
+
+.containerformnewsletter input::placeholder {
+    color: #222222;
+    opacity: 0.3;
+}
+
+.containerformnewsletter form button {
+    background: none;
+    border: none;
+    width: 40px;
+    height: 40px;
+    font-size: 0;
+    display: block;
+    position: relative;
+    position: absolute;
+    right: 0px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.containerformnewsletter form button::after {content: ">";display: block;width: 10px;height: 10px;position: absolute;left: 0;right: 0;font-size: 20px;top: 0;bottom: 0;margin: auto;}
+
+.containerformnewsletter {
+    margin-top: 30px;
+}
+.footernew {
+    /* padding-bottom: 50px; */
+}
+
+.copyrights {
+    margin: 50px 0px 0px;
+    padding: 20px 0px;
+    border-top: 1px solid #cccc;
+}
 
 
 
