@@ -55,3 +55,8 @@ $(function () {
 
   });
 });
+$('.slidercontainer').slick({
+    slideToShow: 1,
+    dots: true,
+    arrows: false,
+})
