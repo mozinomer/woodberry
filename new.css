@@ -1,3 +1,238 @@
 body,.row,ul,ol,p {
 	margin:0px;
 }
+header#desktop {
+    display: flex;
+    align-items: center;
+    min-height: 90px;
+    border-bottom: 1px solid #f7f7f7;
+    padding: 20px 0px;
+}
+
+header#desktop .container {
+    max-width: 1140px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+header#desktop ul {
+    display: flex;
+    list-style: none;
+    padding: 0px;
+    margin: 0px 10px;
+}
+
+.menucontaners {
+    display: flex;
+    align-items: center;
+}
+
+header#desktop a {
+    text-decoration: none;
+    color: #0000009c;
+    text-transform: capitalize;
+}
+
+header#desktop li:nth-child(even) {
+    margin: 0px 13px;
+}
+
+.bagcontainerIcons {
+    background: #EAEAEA;
+    padding: 6px 20px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+span.cartIconcontainer {
+    position: relative;
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+span.counterCLass {
+    background: red;
+    display: flex;
+    width: 10px;
+    height: 20px;
+    align-items: center;
+    justify-content: center;
+    line-height: normal;
+    color: #fff;
+    font-size: 13px;
+    te;
+    position: absolute;
+    position: a;
+    top: -4px;
+    right: -10px;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+}
+
+.bagcontainerIcons span {
+    text-transform: uppercase;
+}
+.cartContainer {
+    background: #000;
+    margin-left: auto;
+    max-width: 450px;
+    height: 100vh;
+}
+
+.headingCOntaienr h3 {
+    color: #fff;
+    padding: 20px;
+    border-bottom: 1px solid #f7f7f7;
+    text-transform: capitalize;
+    margin: 0px;
+}
+
+.cartContainer * {
+    font-weight: 100;
+    /* margin-left: 10px; */
+}
+
+.flexed {
+    display: flex;
+    align-items: flex-start;
+}
+
+ul.cartItemLIst {
+    max-height: 500px;
+    overflow: auto;
+    padding: 0px;
+    margin: 20px 0px;
+    height: 400px;
+    margin-bottom: 0px;
+}
+
+ul.cartItemLIst li {
+    display: flex;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #f7f7f7;
+    margin-bottom: 20px;
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+ul.cartItemLIst img {
+    width: 100px;
+    height: 100px;
+}
+
+.contentContaienritemCart h4 {
+    margin: 0px;
+    color: #f7f7f7;
+    opacity: 0.6;
+    font-size: 14px;
+}
+
+strong.priceCart {
+    color: #f7f7f7;
+    opacity: 0.7;
+    font-size: 14px;
+    margin: 10px 0px;
+    display: block;
+}
+
+.input-group.inline-group {
+    display: flex;
+    align-items: center;
+}
+
+.input-group.inline-group > div {
+    margin: 0px 11px;
+    background: none;
+}
+
+.input-group.inline-group button {
+    background: none;
+    border: 1px solid #f7f7f7;
+    color: #f7f7f7;
+    height: 20px;
+    width: 20px;
+    font-size: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.input-group.inline-group input {
+    background: none;
+    border: 1px solid #f7f7f7;
+    color: #fff;
+    text-align: center;
+    display: block;
+}
+
+.contentContaienritemCart {
+    margin-left: 18px;
+}
+
+.input-group.inline-group > div.input-group-prepend {
+    margin-left: 0px;
+}
+
+.totalSubtotal {
+    background: rgb(87 76 76 / 34%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 20px;
+    border-bottom: 1px solid #f7f7f7;
+}
+
+.totalSubtotal h3 {
+    font-size: 15px;
+    text-transform: uppercase;
+    color: #ffffff9c;
+    border: none;
+}
+
+p.totalPrice {
+    color: #fff;
+}
+
+.containerbuttoncart {
+    display: flex;
+    align-items: self-end;
+    justify-content: space-between;
+    padding: 20px 20px;
+}
+
+a#Editcar {
+    color: #fff;
+    background: #444;
+    width: 45%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 10px 0px;
+}
+
+a#checkout {
+    color: #fff;
+    background: #bf0711;
+    width: 45%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 10px 0px;
+}
