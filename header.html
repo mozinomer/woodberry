@@ -146,10 +146,16 @@
 									<i class="fa fa-user"></i>
 								</a>
 							</li>
-							<li>
+							<li class="has-form">
 								<a href="#">
 									<i class="fa fa-search"></i>
 								</a>
+								<div class="searchcontainer">
+									<form>
+										<input type="text" name="" placeholder="Search Here">
+										<button type="submit">Search</button>
+									</form>
+								</div>
 							</li>
 						</ul>
 						<div class="bagcontainer">
@@ -343,7 +349,18 @@ $('#closerbag').click( function(e) {
 	$('li.has-children a').click( function(e) {
 		e.preventDefault();
 		$(this).parent().find('ul.submenu').animate({'left' : '0px'})
-	})
+	});
+	$('.has-form a').click( function(e) {
+		e.preventDefault();
+		$(this).parent().find('.searchcontainer').css({'display' : 'flex'})
+	});
+	$('body').click(function() {
+	   $('.searchcontainer').hide();
+	});
+
+	$('.searchcontainer form, .has-form a').click(function(event){
+	   event.stopPropagation();
+	});
 </script>
 </html>
 

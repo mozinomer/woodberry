@@ -330,7 +330,61 @@ a#shoppingcart {
 .logocontainer span {
 	display: none;
 }
+li.has-form {
+    position: relative;
+}
 
+.searchcontainer {
+    position: absolute;
+    right: 0px;
+}
+
+.searchcontainer form {
+    display: flex;
+    bottom: 0px;
+    top: auto;
+    width: 100%;
+    max-width: 600px;
+    justify-content: center;
+}
+
+.searchcontainer input {
+    height: 30px;
+    padding: 0px 10px;
+    width: 100%;
+    height: 50px;
+    border-bottom: 1px solid #000;
+    border: none;
+    border-bottom: 1px solid #ccc;
+}
+
+.searchcontainer button {background: none;border: 1px solid #000;margin-left: 10px;width: 30%;}
+
+.searchcontainer {
+    position: fixed;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background: #fff9;
+    z-index: 999;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.searchcontainer button:hover {
+    background: #000;
+    color: #fff;
+    cursor: pointer;
+}
+.searchcontainer input:focus {
+	outline: none;
+}
+.searchcontainer {
+	display: none;
+}
 
 
 
