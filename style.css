@@ -2328,4 +2328,7 @@ html {
     .containerformnewsletter {
         margin-bottom: 40px;
     }
+    .footernew .container .row {
+        margin: 0px;
+    }
 }
