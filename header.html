@@ -5,11 +5,11 @@
 	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
         integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
 	<div class="bagcontaineras">
 		<div class="row">
-			<div class="closerbag" id="closerbag"></div>
 			<div class="closerpludheadingcontainer">
 				<a href="#" id="closerbag">
 					Continue Shopping
@@ -164,4 +164,16 @@
 		</header>
 	</div>
 </body>
+<script type="text/javascript">
+	$('#closerbag').click( function(e) {
+		console.log('sad');
+		e.preventDefault();
+		$('.bodycontainer').animate({'left' : '0px'});
+		$('.bagcontaineras').animate({'right' : '-100%'});
+	});
+	$('.bagcontainer').click( function(e) {
+		$('.bodycontainer').animate({'left' : '-360px'});
+		$('.bagcontaineras').animate({'right' : '0'});
+	});
+</script>
 </html>

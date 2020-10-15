@@ -97,6 +97,7 @@ header {
     /* background: #000; */
     z-index: 999;
     width: 100%;
+    right: -100%;
 }
 
 div.closerbag {
@@ -107,16 +108,18 @@ div.closerbag {
 }
 
 .closerpludheadingcontainer {
-    width: 30%;
+    width: 100%;
     display: block;
     background: #000;
     overflow: auto;
     height: 100%;
+    max-width: 349px;
 }
 
 .bagcontaineras .row {
     display: flex;
     height: 100vh;
+    justify-content: space-between;
 }
 
 .closerpludheadingcontainer > a#closerbag {
@@ -141,8 +144,9 @@ div.closerbag {
 
 ul.listcontainercart {
     list-style: none;
-    height: 40%;
+    height: 100%;
     overflow: auto;
+    max-height: 50%;
 }
 
 ul.listcontainercart li {
@@ -291,3 +295,83 @@ a#shoppingcart {
     color: #fff;
     letter-spacing: 1px;
 }
+.bodycontainer {
+    /*z-index: 9999;*/
+    min-height: 100vh;
+    background: #fff;
+}
+.bodycontainer.lefted {
+    left: -359px;
+    z-index: 9;
+}
+.bodycontainer {
+	transition: 0.1s all;
+}
+.bagcontaineras {
+	transition: 0.1s all;
+}
+.closerpludheadingcontainer {
+    margin-left: auto;
+}
+.bagcontaineras {
+    right: 0 !important;
+    max-width: 350px;
+    width: 350px;
+}
+.bagcontainer {
+	cursor: pointer;
+}
+.bodycontainer {
+    background: #fff;
+    z-index: 99999;
+}
+
+
+@media only screen and (max-width: 767px) {
+	ul.mainmenui {
+	    display: none;
+	}
+
+	ul.socidallinks {
+	    display: none;
+	}
+
+	header img {
+	    width: 50px;
+	    padding: 20px 40px;
+	}
+
+	header {
+	    padding: 0px 30px;
+	    min-height: auto;
+	}
+	ul.listcontainercart img {
+	    width: 60px;
+	    height: 60px;
+	}
+
+	.innercontainebaf {align-items: flex-start;}
+
+	.contentbag h6 {
+	    max-width: 100%;
+	    font-weight: 100;
+	}
+
+	.input-group.inline-group input {
+	    border: 1px solid #ffffff2e;
+	}
+
+	.input-group.inline-group div i {
+	    color: #ffffff70;
+	}
+}
+
+
+
+
+
+
+
+
+
+
