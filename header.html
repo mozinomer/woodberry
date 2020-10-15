@@ -106,6 +106,7 @@
 				<div class="containerinnerheade">
 					<div class="logocontainer">
 						<img src="https://cdn.shopify.com/s/files/1/1366/4773/files/logo1_280x@2x.png?v=1550053593">
+						<span>Menu</span>
 					</div>
 					<div class="mainmenu">
 						<ul class="mainmenui">
@@ -166,8 +167,8 @@
 	<div class="menucontainermobile">
 		<div class="searchcontainer">
 			<input type="text" name="" placeholder="Search">
-			<div class="menuName">Menu</div>
 			<ul class="mainMenus">
+				<div class="menuName">Menu</div>
 				<li class="has-children">
 					<a href="#">Frontier</a>
 					<ul class="submenu">
@@ -224,6 +225,7 @@
 				<li class="has-children">
 					<a href="#">Frontier</a>
 					<ul class="submenu">
+						<div class="menuName">Menu</div>
 						<li>
 							<a href="#">Frontier</a>
 						</li>
@@ -319,5 +321,31 @@
 		$('.bodycontainer').animate({'left' : '-360px'});
 		$('.bagcontaineras').animate({'right' : '0'});
 	});
+
+
+	$('.menuName').click( function(e) {
+		e.preventDefault();
+		$('.bodycontainer').animate({'left' : '0px'});
+	});
+	$('.logocontainer span').click( function(e) {
+		$('.bodycontainer').animate({'left' : '320px'});
+		$('.menucontainermobile').animate({'left' : '0'});
+	});
+	$('li.has-children a').click( function(e) {
+		e.preventDefault();
+		$(this).parent().find('ul.submenu').animate({'left' : '0px'})
+	})
 </script>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
