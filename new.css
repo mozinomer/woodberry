@@ -92,7 +92,7 @@ header {
 	position: relative;
 }
 .bagcontaineras {
-    position: fixed;
+    position: absolute;
     right: 0px;
     /* background: #000; */
     z-index: 999;
