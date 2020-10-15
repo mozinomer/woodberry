@@ -7,6 +7,8 @@ header#desktop {
     min-height: 90px;
     border-bottom: 1px solid #f7f7f7;
     padding: 20px 0px;
+    width: 100%;
+    transition: 0.7s all;
 }
 
 header#desktop .container {
@@ -83,6 +85,8 @@ span.counterCLass {
     margin-left: auto;
     max-width: 450px;
     height: 100vh;
+    width: 0;
+    transition: 0.7s all;
 }
 
 .headingCOntaienr h3 {
@@ -101,6 +105,9 @@ span.counterCLass {
 .flexed {
     display: flex;
     align-items: flex-start;
+    transition: 0.6s all;
+    min-height: 100vh;
+    background: #fff;
 }
 
 ul.cartItemLIst {
@@ -235,4 +242,18 @@ a#checkout {
     text-transform: uppercase;
     text-align: center;
     padding: 10px 0px;
+}
+.cartContainer {
+    position: absolute;
+    top: 0;
+    width: 450px;
+    right: 0px;
+    z-index: -1;
+}
+.flexed.active { 
+	max-width: calc(100% - 500px)
+}
+.flexed {
+	transition: 2s;
+	position:relative;
 }

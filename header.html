@@ -9,91 +9,92 @@
 </head>
 <body>
 	<div class="flexed">
-	<header id="desktop">
-		<div class="container">
-			<div class="logocontainer">
-				<img src="https://cdn.shopify.com/s/files/1/1366/4773/files/logo1_280x@2x.png?v=1550053593">
-			</div>
-			<div class="menucontaners">
-				<ul class="mainmenu">
-					<li class="children-has">
-						<a href="#">
-							fornesttei
-						</a>
-					</li>
-					<li class="children-has">
-						<a href="#">
-							fornesttei
-						</a>
-					</li>
-					<li class="children-has">
-						<a href="#">
-							fornesttei
-						</a>
-					</li>
-					<li class="children-has">
-						<a href="#">
-							fornesttei
-						</a>
-					</li>
-					<li class="children-has">
-						<a href="#">
-							fornesttei
-						</a>
-					</li>
-					<li class="children-has">
-						<a href="#">
-							fornesttei
-						</a>
-					</li>
-					<li class="children-has">
-						<a href="#">
-							fornesttei
-						</a>
-					</li>
-				</ul>
-				<ul class="socialicons">
-					<li>
-						<a href="#">
-							<i class="fa fa-twitter"></i>
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							<i class="fa fa-facebook"></i>
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							<i class="fa fa-instagram"></i>
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							<i class="fa fa-envelope"></i>
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							<i class="fa fa-user"></i>
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							<i class="fa fa-search"></i>
-						</a>
-					</li>
-				</ul>
-				<div class="bagcontainerIcons">
-					<span class="cartIconcontainer">
-						<i class="fa fa-shopping-cart"></i>
-						<span class="counterCLass">1</span>
-					</span>
-					<span>bag</span>
+		<header id="desktop">
+			<div class="container">
+				<div class="logocontainer">
+					<img src="https://cdn.shopify.com/s/files/1/1366/4773/files/logo1_280x@2x.png?v=1550053593">
+				</div>
+				<div class="menucontaners">
+					<ul class="mainmenu">
+						<li class="children-has">
+							<a href="#">
+								fornesttei
+							</a>
+						</li>
+						<li class="children-has">
+							<a href="#">
+								fornesttei
+							</a>
+						</li>
+						<li class="children-has">
+							<a href="#">
+								fornesttei
+							</a>
+						</li>
+						<li class="children-has">
+							<a href="#">
+								fornesttei
+							</a>
+						</li>
+						<li class="children-has">
+							<a href="#">
+								fornesttei
+							</a>
+						</li>
+						<li class="children-has">
+							<a href="#">
+								fornesttei
+							</a>
+						</li>
+						<li class="children-has">
+							<a href="#">
+								fornesttei
+							</a>
+						</li>
+					</ul>
+					<ul class="socialicons">
+						<li>
+							<a href="#">
+								<i class="fa fa-twitter"></i>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<i class="fa fa-facebook"></i>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<i class="fa fa-instagram"></i>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<i class="fa fa-envelope"></i>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<i class="fa fa-user"></i>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<i class="fa fa-search"></i>
+							</a>
+						</li>
+					</ul>
+					<div class="bagcontainerIcons">
+						<span class="cartIconcontainer">
+							<i class="fa fa-shopping-cart"></i>
+							<span class="counterCLass">1</span>
+						</span>
+						<span>bag</span>
+					</div>
 				</div>
 			</div>
-		</div>
-	</header>
+		</header>
+	</div>
 	<div class="cartContainer">
 		<div class="headingCOntaienr">
 			<h3>
@@ -221,33 +222,13 @@
 			</div>	
 		</div>
 	</div>
-	</div>
 </body>
 <script type="text/javascript">
-	$('#closerbag').click( function(e) {
+	$('.bagcontainerIcons').click( function(e) {
 		console.log('sad');
 		e.preventDefault();
-		$('.bodycontainer').animate({'left' : '0px'});
-		$('.bagcontaineras').animate({'right' : '-100%'});
+		$('.flexed').toggleClass('active');
 	});
-	$('.bagcontainer').click( function(e) {
-		$('.bodycontainer').animate({'left' : '-360px'});
-		$('.bagcontaineras').animate({'right' : '0'});
-	});
-
-
-	$('.menuName').click( function(e) {
-		e.preventDefault();
-		$('.bodycontainer').animate({'left' : '0px'});
-	});
-	$('.logocontainer span').click( function(e) {
-		$('.bodycontainer').animate({'left' : '320px'});
-		$('.menucontainermobile').animate({'left' : '0'});
-	});
-	$('li.has-children a').click( function(e) {
-		e.preventDefault();
-		$(this).parent().find('ul.submenu').animate({'left' : '0px'})
-	})
 </script>
 </html>
 
