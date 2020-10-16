@@ -780,11 +780,6 @@ span.closertopheader:before {
     font-size: 9px;
 }
 
-.breadCrubms li:not(:last-child) a {
-    pointer-events: none;
-    touch-action: none;
-    cursor: default;
-}
 div#singlePageCOntainer p.shortDescription {
     max-width: 100%;
     text-overflow: inherit;
@@ -1364,6 +1359,7 @@ form.newsletteForm button:hover {
 }
 .topHeaderNew .row {
     justify-content: space-between;
+    margin: 0px;
 }
 
 .topHeaderNew ul {
@@ -1371,7 +1367,7 @@ form.newsletteForm button:hover {
 }
 
 .topHeaderNew li:nth-child(even) {
-    margin: 0px 20px;
+    margin: 0px 40px;
     color: #000;
 }
 
@@ -1463,7 +1459,7 @@ body {
     top: 3px;
 }
 .searchbar form.active {
-    width: 231px;
+    width: 331px;
     overflow: auto;
 }
 .searchbar form {
@@ -1482,8 +1478,8 @@ body {
     transform: rotate(-46deg);
     height: 24px;
     position: absolute;
-    left: 14px;
-    top: 2px;
+    left: 12px;
+    top: 3px;
     bottom: auto;
 }
 .searchicon {
@@ -1878,7 +1874,9 @@ html {
     justify-content: space-between;
 }
 
-
+.topHeaderNew ul:last-child li:nth-child(even) {
+    margin-right: 0px;
+}
 
 
 
