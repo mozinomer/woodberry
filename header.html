@@ -7,8 +7,35 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
+<style type="text/css">
+	.containerdropdowns {
+		max-width: 600px;
+		margin: auto;
+		padding: 100px 0px;
+	}
+	.dots {
+		display: block;
+		margin-bottom: 50px;
+	}
+	ul { 
+		list-style: none;
+		display: none;
+	}
+	.dotsCOntainer {
+		display: block;
+		cursor: pointer;
+		text-align: right;
+	}
+	ul li a{
+		display: block;
+		box-shadow: 0px 0px 4px 4px #cccc;
+		border-bottom: 1px solid #ccc;	
+		padding: 10px;
+		margin-bottom: 10px;
+	}
+</style>
 <body>
-	<div class="bagcontaineras">
+<!-- 	<div class="bagcontaineras">
 		<div class="row">
 			<div class="closerpludheadingcontainer">
 				<a href="#" id="closerbag">
@@ -314,53 +341,49 @@
 				</ul>
 			</div>
 		</div>
-	</div>
+	</div> -->
 
+
+
+<div class="containerdropdowns">
+	<div class="dots">
+		<span class="dotsCOntainer">Dots</span>
+		<ul class="dotsSubmenu">
+			<li><a href="#">asd</a></li>
+			<li><a href="#">asd</a></li>
+			<li><a href="#">asd</a></li>
+			<li><a href="#">asd</a></li>
+		</ul>
+	</div>
+	<div class="dots">
+		<span class="dotsCOntainer">Dots</span>
+		<ul class="dotsSubmenu">
+			<li><a href="#">asd</a></li>
+			<li><a href="#">asd</a></li>
+			<li><a href="#">asd</a></li>
+			<li><a href="#">asd</a></li>
+		</ul>
+	</div>
+	<div class="dots">
+		<span class="dotsCOntainer">Dots</span>
+		<ul class="dotsSubmenu">
+			<li><a href="#">asd</a></li>
+			<li><a href="#">asd</a></li>
+			<li><a href="#">asd</a></li>
+			<li><a href="#">asd</a></li>
+		</ul>
+	</div>
+</div>
 
 
 </body>
 <script type="text/javascript">
-$('#closerbag').click( function(e) {
-		console.log('sad');
-		e.preventDefault();
-		$('.bodycontainer').animate({'left' : '0px'});
-		$('.bagcontaineras').animate({'right' : '-100%'}).removeClass('active');
-		if ($(window).width() < 767) {
-			$('.menucontainermobile').show();
-		}
-	});
-	$('.bagcontainer').click( function(e) {
-
-		$('.bodycontainer').animate({'left' : '-360px'});
-		$('.bagcontaineras').animate({'right' : '0'}).addClass('active');
-		if ($(window).width() < 767) {
-			$('.menucontainermobile').hide();
-		}
-	});
-	$('.menuName').click( function(e) {
-		e.preventDefault();
-		$('.bodycontainer').animate({'left' : '0px'});
-		$('.submenu').animate({'left' : '100%'});
-	});
-	$('.logocontainer span').click( function(e) {
-		$('.bodycontainer').animate({'left' : '320px'});
-		$('.menucontainermobile').animate({'left' : '0'});
-	});
-	$('li.has-children a').click( function(e) {
-		e.preventDefault();
-		$(this).parent().find('ul.submenu').animate({'left' : '0px'})
-	});
-	$('.has-form a').click( function(e) {
-		e.preventDefault();
-		$(this).parent().find('.searchcontainer').css({'display' : 'flex'})
-	});
-	$('body').click(function() {
-	   $('.searchcontainer').hide();
-	});
-
-	$('.searchcontainer form, .has-form a').click(function(event){
-	   event.stopPropagation();
-	});
+	$('.dotsCOntainer').click( function(e) {
+		
+		$(this).parent().find('.dotsSubmenu').slideToggle();
+		$(this).parent().siblings().children().next().slideUp();
+		return false;
+	})
 </script>
 </html>
 
