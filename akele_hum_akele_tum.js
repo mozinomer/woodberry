@@ -72,3 +72,20 @@ $('.searchicon').click( function(e) {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+$(document).ready(function() {
+ if(localStorage.getItem('popState') != 'shown'){
+    $(".newsleeterPopup").delay(2000).fadeIn();
+    localStorage.setItem('popState','shown')
+}
+});

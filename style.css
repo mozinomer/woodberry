@@ -1215,14 +1215,23 @@ div#aboutpage img {
     right: 0px;
     /* background: red; */
     min-height: 100vh;
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
     overflow: auto;
     /* padding: 60px 0px; */
     height: 100%;
 }
+.flexlis {
+    height: 100%;
+    /* background: red; */
+    min-height: 100vh;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    display: flex;
 
+}
 div#closerpipi {
     position: relative;
     left: 0;
